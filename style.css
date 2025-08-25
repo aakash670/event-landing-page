@@ -1,0 +1,156 @@
+/* Body & Container */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e6b, #53354a);
+  background-image: url(background.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgba(22, 36, 71, 0.95);
+  background-image: url(box.jpg);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 400px;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  color: #e43f5a;
+  text-shadow: 1px 1px 5px #000;
+}
+
+/* Inputs and Button */
+input,
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+}
+
+button {
+  background: #e43f5a;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff6b81;
+}
+
+/* Event List & Countdown Box */
+.countdown-box {
+  background: rgba(33, 47, 61, 0.85);
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column; /* stack title and countdown vertically */
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.countdown-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+}
+
+.countdown-box h3 {
+  font-size: 18px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete button next to event name */
+.countdown-box .deleteBtn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 10px;
+}
+
+.countdown-box .deleteBtn:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.1);
+}
+
+/* Countdown inside event */
+.countdown-box .countdown {
+  display: flex;
+  flex-wrap: wrap; /* allow wrapping */
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.countdown-box .countdown div {
+  background: #0f3460;
+  padding: 10px;
+  border-radius: 8px;
+  flex: 1 1 20%; /* flexible width with min 20% */
+  min-width: 70px; /* prevents too small boxes */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+
+/* Delete button next to event name */
+.countdown-box .deleteBtn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-left: 15px;
+}
+
+.countdown-box .deleteBtn:hover {
+  background-color: #ff1a1a;
+  transform: scale(1.1);
+}
+
+/* Countdown inside event */
+.countdown-box .countdown {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.countdown-box .countdown div {
+  background: #0f3460;
+  padding: 10px;
+  border-radius: 8px;
+  min-width: 50px;
+  text-align: center;
+}

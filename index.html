@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Countdown</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Event Countdown</h1>
+
+    <input type="datetime-local" id="eventTime">
+    <input type="text" id="eventName" placeholder="Event Name">
+    <input type="file" id="customSound" accept="audio/*">
+    <button id="startBtn">Start Countdown</button>
+
+    <!-- Container for multiple events -->
+    <div id="eventList"></div>
+  </div>
+
+  <audio id="alarm" src="Voicy_Bankai.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
